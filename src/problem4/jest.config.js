@@ -14,8 +14,8 @@ module.exports = {
   ],
   testPathIgnorePatterns: [
     "/node_modules/",
-    "/src/problem4/test\\.ts$",
-    "/src/problem4/test\\.js$"
+    "/test\\.ts$",
+    "/test\\.js$"
   ],
   moduleFileExtensions: [
     "ts",
@@ -25,4 +25,12 @@ module.exports = {
     "json",
     "node"
   ],
+  // Problem 4 specific configuration
+  rootDir: ".",
+  testTimeout: 10000,
+  collectCoverageFrom: [
+    "*.ts",
+    "!*.test.ts",
+    "!test.ts"
+  ]
 };
